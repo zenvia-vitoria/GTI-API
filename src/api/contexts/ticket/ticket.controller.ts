@@ -17,7 +17,6 @@ export class TicketController {
       const data = request.body;
       const handler = await this.ticketZCCService.create(data);
 
-
       return response.status(200)
         .json({
           message: "Ticket criado com sucesso.",

@@ -5,6 +5,6 @@ const ticketRouter = Router();
 
 
 ticketRouter
-  .post("/", (req, res, next) => { container.controller.ticket.create(req, res, next) })
+  .post("/", (req, res, next) => { container.api.controller.ticket.create(req, res, next) })
 
 export { ticketRouter };

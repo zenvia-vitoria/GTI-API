@@ -16,6 +16,7 @@ export class ZCCApiClient implements IZccApiClient {
       baseURL: options.baseURL || "https://api.zenvia.com/v2",
       headers: {
         "Content-Type": "application/json",
+        "X-API-TOKEN": this.apiKey
       },
     });
   }
@@ -26,7 +27,7 @@ export class ZCCApiClient implements IZccApiClient {
   ): Promise<T> {
     try {
       const response = await this.api.get<T>(path, {
-        params: { ...params, token: this.apiKey },
+        params: { ...params },
       });
       return response.data;
     } catch (error) {
@@ -34,11 +35,9 @@ export class ZCCApiClient implements IZccApiClient {
     }
   }
 
-  public async post<T>(path: string, body: Record<string, any>): Promise<T> {
+  public async post<T>(path: string, body?: Record<string, any>, params?: Record<string, any>): Promise<T> {
     try {
-      const response = await this.api.post<T>(path, body, {
-        params: { token: this.apiKey },
-      });
+      const response = await this.api.post<T>(path, body);
       return response.data;
     } catch (error) {
       this.handleApiError(error);
@@ -51,7 +50,11 @@ export class ZCCApiClient implements IZccApiClient {
       const errorMessage =
         data?.message || JSON.stringify(data) || "Erro na API Externa";
 
-      throw new Exception(`Erro na API Movidesk: ${errorMessage}`, status);
+      console.log(error)
+
+      console.log(error.response.data.details)
+
+      throw new Exception(`Erro na API ZCC: ${errorMessage}`, status);
     }
 
     throw new Exception("Erro de comunicação com a API Movidesk.", 503); // 503 Service Unavailable

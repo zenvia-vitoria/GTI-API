@@ -1,5 +1,6 @@
-import { ticketRouter } from '@/contexts/ticket/ticket.routes';
 import { Request, Response, Router } from 'express';
+import { APIRouter } from './api.routes';
+import { WebhookRouter } from './webhook.routes';
 
 const mainRouter = Router();
 
@@ -11,7 +12,8 @@ mainRouter.get("/", (
   return response.status(200).send()
 })
 
-mainRouter.use("/ticket", ticketRouter);
+mainRouter.use("/api", APIRouter)
+mainRouter.use("/webhook", WebhookRouter)
 
 
 export { mainRouter };
