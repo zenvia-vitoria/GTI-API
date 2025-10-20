@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "tsx ./dist/core/server.js",
     "build": "tsc",
     "dev": "tsx watch ./src/core/server.ts"
   },
