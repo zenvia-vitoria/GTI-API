@@ -6,13 +6,28 @@ export class ServicingController {
     this.service = service;
   }
 
-  public async show(request: Request, response: Response, next: NextFunction) {
+  public async index(request: Request, response: Response, next: NextFunction) {
     try {
       const { uf } = request.params;
       const handler = this.service.findByUF(uf);
 
       return response.status(200).json({
         message: "Lista de serviços",
+        status: true,
+        data: handler,
+      });
+    } catch (error) {
+      return next(error);
+    }
+  }
+
+  public async show(request: Request, response: Response, next: NextFunction) {
+    try {
+      const { id, uf } = request.params;
+      const handler = this.service.findByID({ id, uf });
+
+      return response.status(200).json({
+        message: "Pesquisa serviço",
         status: true,
         data: handler,
       });
