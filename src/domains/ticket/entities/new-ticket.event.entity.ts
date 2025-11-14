@@ -16,13 +16,13 @@ export class NewTicketEvent {
     const dataText = this.getDynamicDataText(this.props.data);
 
     const fullTicketText = `
-      --- DADOS DA PESSOA ---
+      --- DADOS DA PESSOA ---<br/>
       ${personText}
       <br/><br/><br/>
-      --- ENDEREÇO DE ATENDIMENTO ---
+      --- ENDEREÇO DE ATENDIMENTO ---<br/>
       ${addressText}
       <br/><br/><br/>
-      --- DADOS DO CHAMADO ---
+      --- DADOS DO CHAMADO ---<br/>
       ${dataText}
     `;
 
