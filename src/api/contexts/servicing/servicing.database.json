@@ -1,0 +1,465 @@
+{
+  "BH": [
+    {
+      "id": 1,
+      "servico": "Interrupção de Abastecimento (mudança, viagem, etc)",
+      "preco": "R$ 36,55"
+    },
+    {
+      "id": 2,
+      "servico": "Visita Técnica",
+      "preco": "R$ 88,94"
+    },
+    {
+      "id": 3,
+      "servico": "Instalação Geral (interna e externa) - Fogão Convencional",
+      "preco": "A partir de: R$ 792,90"
+    },
+    {
+      "id": 4,
+      "servico": "Troca de Medidor - Modelo G06",
+      "preco": "A partir de R$ 515,00"
+    },
+    {
+      "id": 5,
+      "servico": "Instalação Interna (Mangueira, registro e conexão) - Fogão Convencional",
+      "preco": "A partir de R$ 198,00"
+    },
+    {
+      "id": 6,
+      "servico": "Troca de regulador",
+      "preco": "A partir de R$ 122,00"
+    },
+    {
+      "id": 7,
+      "servico": "Instalação Cooktop ou Cooktop + Forno",
+      "preco": "CONSULTAR"
+    },
+    {
+      "id": 8,
+      "servico": "Instalação externa(Medidor, regulador, registros e conexões)",
+      "preco": "A partir de R$ 619,00"
+    }
+  ],
+  "CE": [
+    {
+      "id": 9,
+      "servico": "Interrupção de Abastecimento (mudança, viagem, etc)",
+      "preco": "R$ 36,55"
+    },
+    {
+      "id": 10,
+      "servico": "Visita Técnica",
+      "preco": "R$ 88,94"
+    },
+    {
+      "id": 11,
+      "servico": "Instalação Geral (interna e externa) - Fogão Convencional",
+      "preco": "A partir deR$ 792,90"
+    },
+    {
+      "id": 12,
+      "servico": "Troca de Medidor - Modelo G06",
+      "preco": "A partir de R$ 515,00"
+    },
+    {
+      "id": 13,
+      "servico": "Instalação Interna (Mangueira, registro e conexão) - Fogão Convencional",
+      "preco": "A partir de R$ 198,00"
+    },
+    {
+      "id": 14,
+      "servico": "Troca de regulador",
+      "preco": "A partir de R$ 122,00"
+    },
+    {
+      "id": 15,
+      "servico": "Instalação Cooktop ou Cooktop + Forno",
+      "preco": "CONSULTAR"
+    },
+    {
+      "id": 16,
+      "servico": "Instalação externa (Medidor, regulador, registros e conexões)",
+      "preco": "A partir de R$ 619,00"
+    }
+  ],
+  "PR": [
+    {
+      "id": 17,
+      "servico": "Interrupção de Abastecimento (mudança, viagem, etc)",
+      "preco": "R$ 36,55"
+    },
+    {
+      "id": 18,
+      "servico": "Visita Técnica",
+      "preco": "R$ 88,94"
+    },
+    {
+      "id": 19,
+      "servico": "Instalação Geral (interna e externa) - Fogão Convencional",
+      "preco": "A partir de R$ 792,90"
+    },
+    {
+      "id": 20,
+      "servico": "Troca de Medidor - Modelo G06",
+      "preco": "A partir de R$ 515,00"
+    },
+    {
+      "id": 21,
+      "servico": "Instalação Interna (Mangueira, registro e conexão) - Fogão Convencional",
+      "preco": "A partir de R$ 198,00"
+    },
+    {
+      "id": 22,
+      "servico": "Troca de regulador",
+      "preco": "A partir de R$ 122,00"
+    },
+    {
+      "id": 23,
+      "servico": "Instalação Cooktop ou Cooktop + Forno",
+      "preco": "CONSULTAR"
+    },
+    {
+      "id": 24,
+      "servico": "Instalação externa(Medidor, regulador, registros e conexões)",
+      "preco": "A partir de R$ 619,00"
+    },
+    {
+      "id": 25,
+      "servico": "Instalação externa(Medidor, regulador, registros e conexões)",
+      "preco": "A partir de R$ 619,00"
+    }
+  ],
+  "RS": [
+    {
+      "id": 26,
+      "servico": "Interrupção de Abastecimento (mudança, viagem, etc)",
+      "preco": "R$ 36,55"
+    },
+    {
+      "id": 27,
+      "servico": "Visita Técnica",
+      "preco": "R$ 88,94"
+    },
+    {
+      "id": 28,
+      "servico": "Instalação Geral (interna e externa) - Fogão Convencional",
+      "preco": "A partir de R$ 792,90"
+    },
+    {
+      "id": 29,
+      "servico": "Troca de Medidor - Modelo G06",
+      "preco": "A partir de R$ 515,00"
+    },
+    {
+      "id": 30,
+      "servico": "Instalação Interna (Mangueira, registro e conexão) - Fogão Convencional",
+      "preco": "A partir de R$ 198,00"
+    },
+    {
+      "id": 31,
+      "servico": "Troca de regulador",
+      "preco": "A partir de R$ 122,00"
+    },
+    {
+      "id": 32,
+      "servico": "Instalação Cooktop ou Cooktop + Forno",
+      "preco": "CONSULTAR"
+    },
+    {
+      "id": 33,
+      "servico": "Instalação externa(Medidor, regulador, registros e conexões)",
+      "preco": "A partir de R$ 619,00"
+    },
+    {
+      "id": 34,
+      "servico": "Instalação Cooktop ou Cooktop + Forno",
+      "preco": "CONSULTAR"
+    }
+  ],
+  "SC": [
+    {
+      "id": 35,
+      "servico": "Interrupção de Abastecimento (mudança, viagem, etc)",
+      "preco": "R$ 36,55"
+    },
+    {
+      "id": 36,
+      "servico": "Visita Técnica",
+      "preco": "R$ 88,94"
+    },
+    {
+      "id": 37,
+      "servico": "Instalação Geral (interna e externa) - Fogão Convencional",
+      "preco": "A partir de R$ 792,90"
+    },
+    {
+      "id": 38,
+      "servico": "Troca de Medidor - Modelo G06",
+      "preco": "A partir de R$ 515,00"
+    },
+    {
+      "id": 39,
+      "servico": "Instalação Interna (Mangueira, registro e conexão) - Fogão Convencional",
+      "preco": "A partir de R$ 198,00"
+    },
+    {
+      "id": 40,
+      "servico": "Troca de regulador",
+      "preco": "A partir de R$ 122,00"
+    },
+    {
+      "id": 41,
+      "servico": "Instalação Cooktop ou Cooktop + Forno",
+      "preco": "CONSULTAR"
+    },
+    {
+      "id": 42,
+      "servico": "Instalação externa(Medidor, regulador, registros e conexões)",
+      "preco": "A partir de R$ 619,00"
+    }
+  ],
+  "SP": [
+    {
+      "id": 43,
+      "servico": "Interrupção de Abastecimento (mudança, viagem, etc)",
+      "preco": "R$ 36,55"
+    },
+    {
+      "id": 44,
+      "servico": "Visita Técnica",
+      "preco": "R$ 88,94"
+    },
+    {
+      "id": 45,
+      "servico": "Instalação Geral (interna e externa) - Fogão Convencional",
+      "preco": "A partir de R$ 792,90"
+    },
+    {
+      "id": 46,
+      "servico": "Troca de Medidor - Modelo G06",
+      "preco": "A partir de R$ 515,00"
+    },
+    {
+      "id": 47,
+      "servico": "Instalação Interna (Mangueira, registro e conexão) - Fogão Convencional",
+      "preco": "A partir de R$ 198,00"
+    },
+    {
+      "id": 48,
+      "servico": "Troca de regulador",
+      "preco": "A partir de R$ 122,00"
+    }
+  ],
+  "PI": [
+    {
+      "id": 49,
+      "servico": "Interrupção de Abastecimento (mudança, viagem, etc)",
+      "preco": "R$ 36,55"
+    },
+    {
+      "id": 50,
+      "servico": "Visita Técnica",
+      "preco": "R$ 88,94"
+    },
+    {
+      "id": 51,
+      "servico": "Instalação Geral (interna e externa) - Fogão Convencional",
+      "preco": "A partir de R$ 792,90"
+    },
+    {
+      "id": 52,
+      "servico": "Troca de Medidor - Modelo G06",
+      "preco": "A partir de R$ 515,00"
+    },
+    {
+      "id": 53,
+      "servico": "Instalação Interna (Mangueira, registro e conexão) - Fogão Convencional",
+      "preco": "A partir de R$ 198,00"
+    },
+    {
+      "id": 54,
+      "servico": "Troca de regulador",
+      "preco": "A partir de R$ 122,00"
+    },
+    {
+      "id": 55,
+      "servico": "Instalação Cooktop ou Cooktop + Forno",
+      "preco": "CONSULTAR"
+    },
+    {
+      "id": 56,
+      "servico": "Instalação externa(Medidor, regulador, registros e conexões)",
+      "preco": "A partir de R$ 619,00"
+    }
+  ],
+  "MA": [
+    {
+      "id": 57,
+      "servico": "Interrupção de Abastecimento (mudança, viagem, etc)",
+      "preco": "R$ 36,55"
+    },
+    {
+      "id": 58,
+      "servico": "Visita Técnica",
+      "preco": "R$ 88,94"
+    },
+    {
+      "id": 59,
+      "servico": "Instalação Geral (interna e externa) - Fogão Convencional",
+      "preco": "A partir de R$ 792,90"
+    },
+    {
+      "id": 60,
+      "servico": "Troca de Medidor - Modelo G06",
+      "preco": "A partir de R$ 515,00"
+    },
+    {
+      "id": 61,
+      "servico": "Instalação Interna (Mangueira, registro e conexão) - Fogão Convencional",
+      "preco": "A partir de R$ 198,00"
+    },
+    {
+      "id": 62,
+      "servico": "Troca de regulador",
+      "preco": "A partir de R$ 122,00"
+    },
+    {
+      "id": 63,
+      "servico": "Instalação Cooktop ou Cooktop + Forno",
+      "preco": "CONSULTAR"
+    },
+    {
+      "id": 64,
+      "servico": "Instalação externa(Medidor, regulador, registros e conexões)",
+      "preco": "A partir de R$ 619,00"
+    }
+  ],
+  "ES": [
+    {
+      "id": 65,
+      "servico": "Interrupção de Abastecimento (mudança, viagem, etc)",
+      "preco": "R$ 36,55"
+    },
+    {
+      "id": 66,
+      "servico": "Visita Técnica",
+      "preco": "R$ 88,94"
+    },
+    {
+      "id": 67,
+      "servico": "Instalação Geral (interna e externa) - Fogão Convencional",
+      "preco": "A partir de R$ 792,90"
+    },
+    {
+      "id": 68,
+      "servico": "Troca de Medidor - Modelo G06",
+      "preco": "A partir de R$ 515,00"
+    },
+    {
+      "id": 69,
+      "servico": "Instalação Interna (Mangueira, registro e conexão) - Fogão Convencional",
+      "preco": "A partir de R$ 198,00"
+    },
+    {
+      "id": 70,
+      "servico": "Troca de regulador",
+      "preco": "A partir de R$ 122,00"
+    },
+    {
+      "id": 71,
+      "servico": "Instalação Cooktop ou Cooktop + Forno",
+      "preco": "CONSULTAR"
+    },
+    {
+      "id": 72,
+      "servico": "Instalação externa(Medidor, regulador, registros e conexões)",
+      "preco": "A partir de R$ 619,00"
+    }
+  ],
+  "GO": [
+    {
+      "id": 73,
+      "servico": "Interrupção de Abastecimento (mudança, viagem, etc)",
+      "preco": "R$ 35,00"
+    },
+    {
+      "id": 74,
+      "servico": "Visita Técnica",
+      "preco": "R$ 100,00"
+    },
+    {
+      "id": 75,
+      "servico": "Instalação Geral (interna e externa) - Fogão Convencional",
+      "preco": "A partir de R$ 792,90"
+    },
+    {
+      "id": 76,
+      "servico": "Troca de Medidor - Modelo G06",
+      "preco": "A partir de R$ 515,00"
+    },
+    {
+      "id": 77,
+      "servico": "Instalação Interna (Mangueira, registro e conexão) - Fogão Convencional",
+      "preco": "A partir de R$ 198,00"
+    },
+    {
+      "id": 78,
+      "servico": "Troca de regulador",
+      "preco": "A partir de R$ 122,00"
+    },
+    {
+      "id": 79,
+      "servico": "Instalação Cooktop ou Cooktop + Forno",
+      "preco": "CONSULTAR"
+    },
+    {
+      "id": 80,
+      "servico": "Instalação externa(Medidor, regulador, registros e conexões)",
+      "preco": "A partir de R$ 619,00"
+    }
+  ],
+  "DF": [
+    {
+      "id": 81,
+      "servico": "Interrupção de Abastecimento (mudança, viagem, etc)",
+      "preco": "R$ 35,00"
+    },
+    {
+      "id": 82,
+      "servico": "Visita Técnica",
+      "preco": "R$ 150,00"
+    },
+    {
+      "id": 83,
+      "servico": "Instalação Geral (interna e externa) - Fogão Convencional",
+      "preco": "A partir de R$ 792,90"
+    },
+    {
+      "id": 84,
+      "servico": "Troca de Medidor - Modelo G06",
+      "preco": "A partir de R$ 515,00"
+    },
+    {
+      "id": 85,
+      "servico": "Instalação Interna (Mangueira, registro e conexão) - Fogão Convencional",
+      "preco": "A partir de R$ 198,00"
+    },
+    {
+      "id": 86,
+      "servico": "Troca de regulador",
+      "preco": "A partir de R$ 122,00"
+    },
+    {
+      "id": 87,
+      "servico": "Instalação Cooktop ou Cooktop + Forno",
+      "preco": "CONSULTAR"
+    },
+    {
+      "id": 88,
+      "servico": "Instalação externa(Medidor, regulador, registros e conexões)",
+      "preco": "A partir de R$ 619,00"
+    }
+  ],
+  "MG": []
+}

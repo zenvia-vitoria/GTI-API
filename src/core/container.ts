@@ -1,3 +1,5 @@
+import { ServicingController } from "@/api/contexts/servicing/servicing.controller";
+import { ServicingService } from "@/api/contexts/servicing/servicing.service";
 import { TicketController } from "@/api/contexts/ticket/ticket.controller";
 import { TicketZCCService } from "@/api/contexts/ticket/ticket.zcc.service";
 import { ValitaionController } from "@/api/contexts/validation/validation.controller";
@@ -14,14 +16,17 @@ const api = new ZCCApiClient({
 
 const ticketController = new TicketController(new TicketZCCService(api));
 const ticketEventsController = new TicketEventsController(
-  new TicketEventService(),
+  new TicketEventService()
 );
+const servicingService = new ServicingService();
+const servicingController = new ServicingController(servicingService);
 
 const validationController = new ValitaionController(new ValitionService());
 
 export const container = {
   api: {
     controller: {
+      servicing: servicingController,
       ticket: ticketController,
       validation: validationController,
     },
