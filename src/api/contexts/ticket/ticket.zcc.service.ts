@@ -10,7 +10,7 @@ export class TicketZCCService implements ITicketZCCService {
 
     const newData = {
       type: "INTERNAL",
-      subject: "string",
+      subject: data.service,
       clients: ["5b30807b-10b9-4e58-bc15-6991c09ad15e"],
       category: {
         id: 287269,

@@ -18,10 +18,10 @@ export class NewTicketEvent {
     const fullTicketText = `
       --- DADOS DA PESSOA ---
       ${personText}
-
+      <br/><br/><br/>
       --- ENDEREÇO DE ATENDIMENTO ---
       ${addressText}
-
+      <br/><br/><br/>
       --- DADOS DO CHAMADO ---
       ${dataText}
     `;
@@ -31,19 +31,18 @@ export class NewTicketEvent {
 
   private getAddress(address: NewTicketAddressEventProps) {
     const text = `
+    <strong>LOGRADOURO:</strong> ${address.street} <br/>
+    <strong>BAIRRO:</strong> ${address.district}<br/>
+    <strong>NUMERO:</strong> ${address.number}<br/>
+    <strong>CIDADE:</strong> ${address.city}<br/>
+    <strong>ESTADO:</strong> ${address.state}<br/>
+    <strong>CEP:</strong> ${address.zip_code}<br/>
 
-    LOGRADOURO: ${address.street}
-    BAIRRO: ${address.district}
-    NUMERO: ${address.number}
-    CIDADE: ${address.city}
-    ESTADO: ${address.state}
-    CEP: ${address.zip_code}
 
-
-    DETALHES:
-     - BLOCO: ${address.details.bloco}
-     - CONDOMINIO: ${address.details.condominio}
-     - APARTAMENTO:${address.details.apartamento_numero}
+    <strong>DETALHES:</strong><br/>
+     <strong>- BLOCO: </strong> ${address.details.bloco}<br/>
+     <strong>- CONDOMINIO: </strong> ${address.details.condominio}<br/>
+     <strong>- APARTAMENTO: </strong>${address.details.apartamento_numero}<br/>
     `;
 
     return text;
@@ -51,13 +50,11 @@ export class NewTicketEvent {
 
   private getPerson(person: NewTicketPersonEventProps) {
     const text = `
-      TELEFONE: ${person.telefone}
-      WHATSAPP? ${person.whatsapp}
-
-      TIPO DE PESSOA: ${person.tipo_pessoa}
-      DOCUMENTO: ${person.documento}
-
-      NOME COMPLETO: ${person.nomecompleto}
+      <strong>TELEFONE:</strong> ${person.telefone}<br/>
+      <strong>WHATSAPP?</strong> ${person.whatsapp}<br/><br/>
+      <strong>TIPO DE PESSOA:</strong> ${person.tipo_pessoa}<br/>
+      <strong>DOCUMENTO:</strong> ${person.documento}<br/><br/>
+      <strong>NOME COMPLETO:</strong> ${person.nomecompleto}<br/>
     `;
 
     return text;
@@ -69,7 +66,7 @@ export class NewTicketEvent {
     const lines = keys.map((key) => {
       const formattedKey = this.formatKey(key);
       const value = data[key];
-      return `${formattedKey}: ${value}`;
+      return `<strong>${formattedKey}:</strong> ${value}<br/>`;
     });
 
     return lines.join("\n");
