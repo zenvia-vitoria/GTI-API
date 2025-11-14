@@ -1,30 +1,32 @@
-import { NewTicketAddressEventProps, NewTicketEventProps, NewTicketPersonEventProps } from "../interfaces/new-ticket-event.interface";
-
+import {
+  NewTicketAddressEventProps,
+  NewTicketEventProps,
+  NewTicketPersonEventProps,
+} from "../interfaces/new-ticket-event.interface";
 
 export class NewTicketEvent {
-  private props: NewTicketEventProps
+  private props: NewTicketEventProps;
 
   constructor(props: NewTicketEventProps) {
-    this.props = props
+    this.props = props;
   }
   public async handler() {
-    const addressText = this.getAddress(this.props.address)
+    const addressText = this.getAddress(this.props.address);
     const personText = this.getPerson(this.props.person);
     const dataText = this.getDynamicDataText(this.props.data);
 
     const fullTicketText = `
       --- DADOS DA PESSOA ---
-      ${personText.trim()}
+      ${personText}
 
       --- ENDEREÇO DE ATENDIMENTO ---
-      ${addressText.trim()}
+      ${addressText}
 
       --- DADOS DO CHAMADO ---
-      ${dataText.trim()}
-    `
+      ${dataText}
+    `;
 
-    return fullTicketText.trim();
-
+    return fullTicketText;
   }
 
   private getAddress(address: NewTicketAddressEventProps) {
@@ -42,9 +44,9 @@ export class NewTicketEvent {
      - BLOCO: ${address.details.bloco}
      - CONDOMINIO: ${address.details.condominio}
      - APARTAMENTO:${address.details.apartamento_numero}
-    `
+    `;
 
-    return text
+    return text;
   }
 
   private getPerson(person: NewTicketPersonEventProps) {
@@ -56,28 +58,23 @@ export class NewTicketEvent {
       DOCUMENTO: ${person.documento}
 
       NOME COMPLETO: ${person.nomecompleto}
-    `
+    `;
 
-    return text
+    return text;
   }
 
   private getDynamicDataText(data: Record<string, any>): string {
     const keys = Object.keys(data);
 
-    const lines = keys.map(key => {
+    const lines = keys.map((key) => {
       const formattedKey = this.formatKey(key);
       const value = data[key];
       return `${formattedKey}: ${value}`;
     });
 
-    return lines.join('\n');
+    return lines.join("\n");
   }
   private formatKey(key: string): string {
-    return key
-      .replace(/_/g, ' ')
-      .toUpperCase();
+    return key.replace(/_/g, " ").toUpperCase();
   }
-
 }
-
-
